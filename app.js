@@ -6,6 +6,10 @@ app.get('/',(req,res)=>{
 res.send('Welcome to the Github')
 })
 
+app.get('*',(req,res)=>{
+res.send('Error page not found')
+})
+
 
 const port = 3000;
 app.listen(port, ()=>{
